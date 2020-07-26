@@ -282,6 +282,10 @@ article{
 	width:25%;
 }
 
+.produit-nom{
+	padding-right:0.5rem;
+}
+
 .quantity{
 	width:10%;
 }
