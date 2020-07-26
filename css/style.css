@@ -260,13 +260,17 @@ main {
 
 /*panier*/
 
-article {
-	border: 2px solid #3fabc9;
-}
-
 .produit-img > img{
 	display: block;
 	width:320px;
+}
+
+.produit-information, .sous-total{
+	background-color: #3fabc9;
+}
+
+.produit-img, .quantity{
+	border: 2px solid #3fabc9;
 }
 
 
