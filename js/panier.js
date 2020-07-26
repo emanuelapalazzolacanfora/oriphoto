@@ -35,7 +35,7 @@ const renderCart = (productId, productName, productPrice, imgUrl, productQuantit
     <button class="supprime ">supprimer</button></div>
     <div class="produit-information>
         <p class="produit-nom">${productName}</p>
-        <p class="produit-prix">${productPrice / 100}</p>
+        <p class="produit-prix">${productPrice / 100}€</p>
     </div>
     <div class="quantity">
         <i class="fas fa-minus-circle"></i>
