@@ -400,7 +400,3 @@ footer {
 	border: 2px solid #000;
 }
 
-a > i:focus{
-	border-bottom:2px solid #000;
-}
-
