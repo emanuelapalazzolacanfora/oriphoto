@@ -21,7 +21,7 @@ const updateTotalPrice = () => {
     for (let product of Object.values(panier)) {
         totalPrice += product.price * product.quantity
     }
-    cartTotal.textContent = `Le prix Total de votre panier est de <span class"panier-total__prix">${totalPrice / 100}€</span>`; /* Affiche le prix total */
+    cartTotal.innerHTM = `Le prix Total de votre panier est de <span class"panier-total__prix">${totalPrice / 100}€</span>`; /* Affiche le prix total */
 }
 
 // Fourni l'affichage du/des produits du panier
