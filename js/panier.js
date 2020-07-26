@@ -43,7 +43,7 @@ const renderCart = (productId, productName, productPrice, imgUrl, productQuantit
         <span class="product-quantity">${productQuantity}</span>
         <i class="fas fa-plus-circle"></i>
     </div>
-    <p class="sous-total">Sous-total : ${totalPriceProduct}€</p>`;
+    <div class="sous-total">Sous-total : ${totalPriceProduct}€</div>`;
     updateTotalPrice();
     cart.appendChild(article)
 
