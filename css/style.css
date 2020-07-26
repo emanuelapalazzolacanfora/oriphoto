@@ -264,6 +264,11 @@ article {
 	border: 2px solid #3fabc9;
 }
 
+.produit-img > img{
+	display: block;
+	width:320px;
+}
+
 
 /*formulaire*/
 
