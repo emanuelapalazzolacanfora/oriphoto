@@ -29,6 +29,7 @@ const renderCart = (productId, productName, productPrice, imgUrl, productQuantit
     const totalPriceProduct = productPrice / 100 * productQuantity;
     /* Affiche article(s) du panier */
     const article = document.createElement("article");
+    article.setAttribute("class", "flexbox");
     article.innerHTML = `
     <div class="produit-img">
     <img src="${imgUrl}" width="100">
