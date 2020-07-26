@@ -260,6 +260,14 @@ main {
 
 /*panier*/
 
+article{
+	width:80%;
+}
+
+.produit-img{
+	width:40%;
+}
+
 .produit-img > img{
 	display: block;
 	width:320px;
@@ -268,9 +276,11 @@ main {
 
 .produit-information, .sous-total{
 	background-color: #3fabc9;
+	width:25%;
 }
 
 .quantity{
+	width:10%;
 	border: 2px solid #3fabc9;
 }
 
