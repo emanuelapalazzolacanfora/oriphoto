@@ -66,7 +66,7 @@ p{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin:0;
+	margin:auto;
 	padding: 1rem;
 	-webkit-box-align: center;
 	 -ms-flex-align: center;
