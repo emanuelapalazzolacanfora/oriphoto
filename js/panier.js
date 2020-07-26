@@ -32,13 +32,13 @@ const renderCart = (productId, productName, productPrice, imgUrl, productQuantit
     article.setAttribute("class", "flexbox");
     article.innerHTML = `
     <div class="produit-img">
-    <img src="${imgUrl}" width="100">
+    <img src="${imgUrl}">
     <button class="supprime ">supprimer</button></div>
-    <div class="produit-information>
+    <div class="produit-information flexbox">
         <p class="produit-nom">${productName}</p>
-        <p class="produit-prix">${productPrice / 100}€</p>
+        <p class="produit-prix">${productPrice / 100}</p>
     </div>
-    <div class="quantity">
+    <div class="quantity flexbox">
         <i class="fas fa-minus-circle"></i>
         <span class="product-quantity">${productQuantity}</span>
         <i class="fas fa-plus-circle"></i>
