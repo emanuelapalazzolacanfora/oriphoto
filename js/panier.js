@@ -36,7 +36,7 @@ const renderCart = (productId, productName, productPrice, imgUrl, productQuantit
     <button class="supprime bgc__secondaire ">supprimer</button></div>
     <div class="produit-information flexbox">
         <p class="produit-nom">${productName}</p>
-        <p class="produit-prix">${productPrice / 100}</p>
+        <p class="produit-prix">${productPrice / 100}€</p>
     </div>
     <div class="quantity flexbox">
         <i class="fas fa-minus-circle"></i>
