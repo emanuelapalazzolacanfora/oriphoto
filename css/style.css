@@ -290,6 +290,10 @@ article{
 	width:10%;
 }
 
+.fa-minus-circle, .fa-plus-circle{
+	color:#CDCD37;
+}
+
 
 /*formulaire*/
 
@@ -366,7 +370,7 @@ button:focus{
 	text-align:center;
 }
 
-.panier-total__prix, .user, .order-id{
+.panier-total__prix, .fa-minus-circle, .fa-plus-circle, .user, .order-id{
 	color: #CDCD37;
 	text-transform: capitalize;
 	font-weight:bold;
