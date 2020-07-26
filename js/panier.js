@@ -22,6 +22,7 @@ const updateTotalPrice = () => {
         totalPrice += product.price * product.quantity
     }
     cartTotal.textContent = `Total : ${totalPrice / 100}€`; /* Affiche le prix total */
+    cart.insertBefore(cartTotal, article);
 }
 
 // Fourni l'affichage du/des produits du panier
