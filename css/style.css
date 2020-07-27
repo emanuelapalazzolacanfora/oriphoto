@@ -390,6 +390,15 @@ input, textarea {
 	#panier > .flexbox{
 		display:block;
 	}
+	
+	.produit-img, .produit-information, .quantity, .sous-total{
+		width:100%;
+	}
+	fieldset
+	{
+		width:auto;
+		margin:auto;
+	}
 }
 
 @media screen and (max-width:699px) {
