@@ -394,11 +394,6 @@ input, textarea {
 	.produit-img, .produit-information, .quantity, .sous-total{
 		width:100%;
 	}
-	fieldset
-	{
-		width:100%;
-		margin:auto;
-	}
 }
 
 @media screen and (max-width:699px) {
@@ -420,6 +415,12 @@ input, textarea {
 	}
 	#panier > flexbox {
 		display:block;
+	}
+	
+	fieldset
+	{
+		width:300px;
+		margin:auto;
 	}
 }
 
@@ -453,6 +454,12 @@ input, textarea {
 		margin:auto;
 		margin-bottom:0.5rem;
 	}
+	
+	fieldset
+	{
+		width:100%;
+		margin:auto;
+	}
 	header footer{
 		width:auto;
 	}
@@ -483,6 +490,12 @@ input, textarea {
 		width:70%;
 		margin:auto;
 		margin-bottom:0.5rem;
+	}
+	
+	fieldset
+	{
+		width:100%;
+		margin:auto;
 	}
 	header footer{
 		width:auto;
