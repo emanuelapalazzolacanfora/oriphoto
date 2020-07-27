@@ -389,6 +389,16 @@ input, textarea {
 	}
 }
 
+@media screen and (max-width:1199px) {
+	
+	.ficheduproduit > div {
+		display:block;
+	}
+	.conteneur__demie{
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 499px) {
 	.conteneur__demie{
 		width: 100%;
