@@ -185,7 +185,7 @@ main {
 }
 
 .btn__achat {
-	width : 300px;
+	width : auto;
 	margin-top:0.5rem;
 }
 
