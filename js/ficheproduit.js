@@ -16,7 +16,7 @@ idProduit = location.search.substring(4);
 
 get (apiUrl+idProduit).then((response)=>{
 	
-	var titre;
+	const titre;
 titre = document.title;
 window.onfocus = function() {
     document.title = titre;
