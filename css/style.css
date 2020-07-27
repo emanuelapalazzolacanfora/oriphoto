@@ -117,13 +117,8 @@ ul {
 	align-items: baseline; 
 }
 
-li > a {
-	display: block;
-  	width:auto;
-}
-
 .logo__header{
-	-webkit-order: 0;
+    -webkit-order: 0;
     -ms-flex-order: 0;
     order: 0;
     -webkit-flex: 3 3 auto;
@@ -133,6 +128,9 @@ li > a {
     -ms-flex-item-align: auto;
     align-self: auto;
     }
+.logo__header > a{
+	display:block;
+	width:260px;
 
 .logo{
 	width:3.125rem;
