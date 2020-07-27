@@ -387,6 +387,9 @@ input, textarea {
 	.conteneur__demie{
 		width: 100%;
 	}
+	#panier > .flexbox{
+		display:block;
+	}
 }
 
 @media screen and (max-width:699px) {
