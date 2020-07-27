@@ -120,6 +120,7 @@ h1{
 	margin:0 auto;
 	font-family: 'Cookie', cursive;
 	font-size:5rem;
+	text-transform: lowercase;
 	text-align:left;
 }
 
