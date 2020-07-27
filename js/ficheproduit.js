@@ -16,16 +16,6 @@ idProduit = location.search.substring(4);
 
 get (apiUrl+idProduit).then((response)=>{
 	
-	const titre;
-titre = document.title;
-window.onfocus = function() {
-    document.title = titre;
-};
-window.onblur = function()  {
-    document.title = "response.name";
-};
-    
-    
     //élément de l'API a insérer dans le document HTML
     let produitImage = document.getElementById("imageduproduit")
     produitImage.setAttribute("src", response.imageUrl);
