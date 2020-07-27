@@ -19,6 +19,8 @@ body{
 	background-color: #CDCD37;
 } 
 
+/*ecriture*/
+
 a, a:hover, a:visited, a:link{	
 	color:#FFFFFF;
 	text-decoration: none !important;
@@ -41,8 +43,6 @@ i{
 	vertical-align: middle; 
 }
 
-/*ecriture*/
-
 p{
   font-size:1rem;
 }
@@ -52,67 +52,10 @@ p{
 	font-weight:bold;
 }
 
-.element{
+.panier-total__prix, .fa-minus-circle, .fa-plus-circle, .user, .order-id{
+	color: #CDCD37;
+	text-transform: capitalize;
 	font-weight:bold;
-	font-size:1.1rem;
-	font-family: 'Poppins', sans-serif;
-}
-
-
-
-/*flexbox*/
-
-.flexbox{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	margin:auto;
-	padding: 1rem;
-	-webkit-box-align: center;
-	 -ms-flex-align: center;
-	align-items: center;
-	justify-content: center;
-}
-
-/*image*/
-
-.logo{
-	width:3.125rem;
-	height:3.125rem;
-}
-
-header {
-	width:100%;
-	margin:0;
-}
-
-.logo__header{
-	-webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 3 3 auto;
-    -ms-flex: 3 3 auto;
-    flex: 3 3 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-    }
-
-
-ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width:100%;
-	list-style:none;
-	margin-left:0;
-	padding-left:0;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: baseline;
-	-ms-flex-align: baseline;
-	align-items: baseline; 
 }
 
 h1{
@@ -137,9 +80,65 @@ h2{
 	font-family: 'Cookie', cursive;
 }
 
+/*flexbox*/
+
+.flexbox{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin:auto;
+	padding: 1rem;
+	-webkit-box-align: center;
+	 -ms-flex-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+/*header*/
+
+header {
+	width:100%;
+	margin:0;
+}
+
 nav > a {
 	display:block;
 }
+
+ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width:100%;
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline; 
+}
+
+.logo__header{
+	-webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 3 3 auto;
+    -ms-flex: 3 3 auto;
+    flex: 3 3 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.logo{
+	width:3.125rem;
+	height:3.125rem;
+}
+
+/*corps de texte*/
 
 main {
 	width:80%;
@@ -150,6 +149,7 @@ main {
 	padding-bottom:4%;
 }
 
+/*erreur*/
 
 .conteneur__erreur{
 	width:100%;
@@ -174,26 +174,45 @@ main {
 
 }
 
-/*article*/
+/*bouton*/
 
-#prixduproduit{
-	font-size:2rem;
-	margin:0;
+.btn {
+	margin: 1rem 2rem 1rem 1rem;
+	border-radius: 0.8em;
+	border: none;
+	cursor: pointer;
+	line-height: 1rem;
 }
 
-.conteneur-image{
-	width:100%;
-	height:100%;
-	margin:0;
-	overflow:hidden;
+.btn__achat {
+	width : 300px;
+	margin-top:0.5rem;
 }
 
-.article-image{
-
-	width:100%;
-	height:AUTO;
-	transform: scale(1);
+.btn__achat > i {
+	vertical-align: middle;
 }
+
+button{
+	margin: 1rem auto;
+	padding: 0.4rem;
+	background-color: #3fabc9;
+	border-radius: 0.8em;
+	border: none;
+	cursor: pointer;
+	line-height: 1rem;
+	text-transform: uppercase;
+	font-weight:bold;
+
+}
+
+/*focus*/
+
+.focus:focus{
+	border: 2px solid #000;
+}
+
+/*liste produit*/
 
 .listedesproduits{
 	display: -webkit-flex;
@@ -261,6 +280,20 @@ main {
 	align-self:stretch;
 }
 
+/*fiche produit*/
+
+#prixduproduit{
+	font-size:2rem;
+	margin:0;
+}
+
+.article-image{
+
+	width:100%;
+	height:AUTO;
+	transform: scale(1);
+}
+
 /*panier*/
 
 article{
@@ -296,7 +329,6 @@ article{
 	color:#CDCD37;
 }
 
-
 /*formulaire*/
 
 #adresseclient{
@@ -331,23 +363,6 @@ input, textarea {
 	font-size: .9rem;
 }
 
-button{
-	margin: 1rem auto;
-	padding: 0.4rem;
-	background-color: #3fabc9;
-	border-radius: 0.8em;
-	border: none;
-	cursor: pointer;
-	line-height: 1rem;
-	text-transform: uppercase;
-	font-weight:bold;
-
-}
-
-button:focus{
-	border: 2px solid #000;
-}
-
 /*confirmationdecommande*/
 
 .conteneur__demie{
@@ -368,42 +383,9 @@ button:focus{
 	text-align:center;
 }
 
-.panier-total__prix, .fa-minus-circle, .fa-plus-circle, .user, .order-id{
-	color: #CDCD37;
-	text-transform: capitalize;
-	font-weight:bold;
-}
-
 /* footer */
 footer {
 	width:100%;
 	position: fixed;
 	bottom: 0;
 }
-
-
-/*bouton*/
-
-.btn {
-	margin: 1rem 2rem 1rem 1rem;
-	border-radius: 0.8em;
-	border: none;
-	cursor: pointer;
-	line-height: 1rem;
-}
-
-.btn__achat {
-	width : 300px;
-	margin-top:0.5rem;
-}
-
-.btn__achat > i {
-	vertical-align: middle;
-}
-
-/*focus*/
-
-.focus:focus{
-	border: 2px solid #000;
-}
-
