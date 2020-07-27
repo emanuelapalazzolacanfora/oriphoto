@@ -94,49 +94,7 @@ h2{
 	justify-content: center;
 }
 
-/*header*/
 
-header {
-	width:100%;
-	margin:0;
-}
-
-ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width:100%;
-	list-style:none;
-	margin-left:0;
-	padding-left:0;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: baseline;
-	-ms-flex-align: baseline;
-	align-items: baseline; 
-}
-
-.logo__header{
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 3 3 auto;
-    -ms-flex: 3 3 auto;
-    flex: 3 3 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-    }
-.logo__header > a{
-	display:block;
-	width:260px;
-}
-
-.logo{
-	width:3.125rem;
-	height:3.125rem;
-}
 
 /*corps de texte*/
 
@@ -382,6 +340,4 @@ input, textarea {
 	padding-top: 1%;
 	text-align:center;
 }
-
-/* footer */
 
