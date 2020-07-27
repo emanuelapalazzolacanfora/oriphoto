@@ -374,7 +374,7 @@ input, textarea {
 	border-style: none solid solid solid;
 	border-width: 2px;
 	border-color:#3fabc9;
-	vertical-align
+	vertical-align:text-top;
 }
 
 .conteneur__bleu > p{
