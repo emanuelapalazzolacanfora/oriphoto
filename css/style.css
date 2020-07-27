@@ -209,7 +209,7 @@ main {
 }
 .ficheproduit-contenant__index {
 	width:46%;
-	height:30%;
+	height:auto;
 	margin:1% 1%;
 	text-align:center;
 	order:0;
@@ -218,9 +218,9 @@ main {
 	flex-basis:auto;
 	align-self:stretch;
 	overflow: hidden;
-	-webkit-box-shadow: 0px 0px 17px #000000;
-	-moz-box-shadow: 0px 0px 17px #000000;
-	box-shadow: 0px 0px 17px #000000;
+	-webkit-box-shadow: 0px 0px 0.5rem #000000;
+	-moz-box-shadow: 0px 0px 0.5rem #000000;
+	box-shadow: 0px 0px 0.5rem #000000;
 }
 
 .ficheproduit-contenu{
