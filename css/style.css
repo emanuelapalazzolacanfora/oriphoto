@@ -383,6 +383,12 @@ input, textarea {
 	text-align:center;
 }
 
+@media screen and (max-width:1199px) {
+	.ficheduproduit conteneur__demie{
+		width: 70%;
+	}
+}
+
 @media screen and (max-width: 499px) {
 	.listedesproduits{
 		display:block;
