@@ -389,7 +389,7 @@ input, textarea {
 	}
 }
 
-@media screen and (max-width:799px) {
+@media screen and (max-width:865px) {
 	.conteneur__demie{
 		width: 80%;
 	}
