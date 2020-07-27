@@ -387,4 +387,8 @@ input, textarea {
 	.listedesproduits{
 		display:block;
 	}
+	.ficheproduit-contenant__index{
+		width:70%;
+		margin:auto;
+	}
 }
