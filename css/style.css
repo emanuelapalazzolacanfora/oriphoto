@@ -390,5 +390,9 @@ input, textarea {
 	.ficheproduit-contenant__index{
 		width:70%;
 		margin:auto;
+		margin-bottom:2px;
+	}
+	header footer{
+		width:auto;
 	}
 }
