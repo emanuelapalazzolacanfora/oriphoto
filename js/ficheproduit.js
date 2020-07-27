@@ -5,7 +5,14 @@ const produitSell = "cameras"  //Au choix entre : "cameras" - "furniture" - "ted
 const apiUrl = "https://oc-p5-api.herokuapp.com/api/" + produitSell + "/";
 
 //id des différents produits dans l'API
-
+let titre;
+titre = document.title;
+window.onfocus = function() {
+    document.title = titre;
+};
+window.onblur = function()  {
+    document.title = "Fiche du produit response.name";
+};
 let idProduit = "";
 
 //Collecter l'URL après le ?id= pour le récupérer uniquement sur l'API
@@ -15,6 +22,8 @@ idProduit = location.search.substring(4);
 **********************************************/
 
 get (apiUrl+idProduit).then((response)=>{
+	
+	
 	
     //élément de l'API a insérer dans le document HTML
     let produitImage = document.getElementById("imageduproduit")
