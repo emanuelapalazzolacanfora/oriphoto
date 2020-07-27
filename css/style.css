@@ -385,23 +385,14 @@ input, textarea {
 
 @media screen and (max-width:1199px) {
 	.conteneur__demie{
-		width: 70%;
-	}
-}
-
-@media screen and (max-width:865px) {
-	.conteneur__demie{
-		width: 80%;
-	}
-}
-
-@media screen and (max-width:747px) {
-	.conteneur__demie{
 		width: 100%;
 	}
 }
 
 @media screen and (max-width: 499px) {
+	.conteneur__demie{
+		width: 100%;
+	}
 	.listedesproduits{
 		display:block;
 	}
@@ -417,6 +408,9 @@ input, textarea {
 }
 
 @media screen and (max-width: 455px) {
+	.conteneur__demie{
+		width: 100%;
+	}
 
 	.listedesproduits{
 		display:block;
