@@ -396,7 +396,7 @@ input, textarea {
 	}
 	fieldset
 	{
-		width:auto;
+		width:100%;
 		margin:auto;
 	}
 }
@@ -420,6 +420,12 @@ input, textarea {
 	}
 	#panier > flexbox {
 		display:block;
+	}
+}
+
+@media screen and (max-width:520px) {
+	.produit-img > img {
+ 		   width: 100%;
 	}
 }
 
