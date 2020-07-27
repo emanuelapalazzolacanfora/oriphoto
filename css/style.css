@@ -383,3 +383,8 @@ input, textarea {
 	text-align:center;
 }
 
+@media screen and (max-width: 499px) {
+	.listedesproduits{
+		display:block;
+	}
+}
