@@ -390,7 +390,7 @@ input, textarea {
 	.ficheproduit-contenant__index{
 		width:70%;
 		margin:auto;
-		margin-bottom:2px;
+		margin-bottom:0.5rem;
 	}
 	header footer{
 		width:auto;
