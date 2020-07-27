@@ -395,6 +395,12 @@ input, textarea {
 	}
 }
 
+@media screen and (max-width:747px) {
+	.conteneur__demie{
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 499px) {
 	.listedesproduits{
 		display:block;
