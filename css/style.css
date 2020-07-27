@@ -384,6 +384,13 @@ input, textarea {
 	text-align:center;
 }
 
+/* footer */
+footer {
+	width:100%;
+	position: fixed;
+	bottom: 0;
+}
+
 @media screen and (max-width:1199px) {
 	.conteneur__demie{
 		width: 100%;
