@@ -101,10 +101,6 @@ header {
 	margin:0;
 }
 
-nav > a {
-	display:block;
-}
-
 ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -119,6 +115,11 @@ ul {
 	-webkit-box-align: baseline;
 	-ms-flex-align: baseline;
 	align-items: baseline; 
+}
+
+li > a {
+	display: block;
+  	width:auto;
 }
 
 .logo__header{
