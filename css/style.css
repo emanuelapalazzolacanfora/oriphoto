@@ -395,4 +395,31 @@ input, textarea {
 	header footer{
 		width:auto;
 	}
+	
+}
+
+@media screen and (max-width: 455px) {
+
+	.listedesproduits{
+		display:block;
+	}
+	.ficheproduit-contenant__index{
+		width:70%;
+		margin:auto;
+		margin-bottom:0.5rem;
+	}
+	header footer{
+		width:auto;
+	}
+	
+	i {
+    		font-size: 2rem;
+	}
+	h1{
+		font-size: 2.3rem;
+	}
+	.logo {
+   		 width: 1.8rem;
+    		height: 1.8rem;
+	}
 }
