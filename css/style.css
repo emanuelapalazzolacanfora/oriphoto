@@ -389,7 +389,7 @@ input, textarea {
 	}
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width:699px) {
 	
 	.ficheduproduit > div {
 		display:block;
