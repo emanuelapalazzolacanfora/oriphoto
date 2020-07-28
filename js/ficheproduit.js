@@ -84,8 +84,10 @@ get (apiUrl+idProduit).then((response)=>{
       panier[product.id].quantity += 1;
       produitdanspanier.textContent = "Le produit a été ajouté au panier !";
       produitdanspanier.style.color="#CDCD37";
-      window.open("./index.html");
-    } else {
+    } if (panier[product.id] !== undefined) {
+      panier[product.id].quantity = nbr%2 == 0;
+      produitdanspanier.textContent = "Le produit a été ajouté au panier !";
+    }else {
       panier[product.id] = product;
       produitdanspanier.textContent = "Le produit a été ajouté au panier !";
     }
