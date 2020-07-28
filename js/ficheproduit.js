@@ -87,7 +87,6 @@ get (apiUrl+idProduit).then((response)=>{
     } else {
       panier[product.id] = product;
       produitdanspanier.textContent = "Le produit a été ajouté au panier !";
-      produitdanspanier.style.color="#CDCD37";
     }
     // update panier localstorage
     localStorage.setItem("panier", JSON.stringify(panier));
