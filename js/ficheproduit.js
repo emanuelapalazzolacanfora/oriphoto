@@ -82,12 +82,8 @@ get (apiUrl+idProduit).then((response)=>{
     // ajouter le produit au panier
     if (panier[product.id] !== undefined) {
       panier[product.id].quantity += 1;
-      produitdanspanier.textContent = "Le produit a été ajouté au panier !";
-      produitdanspanier.style.color="#CDCD37";
-    } if (panier[product.id] !== undefined) {
-      panier[product.id].quantity = nbr%2 == 0;
-      produitdanspanier.textContent = "Le produit a été ajouté au panier !";
-    }else {
+      alert("Un produit supplémentaire a été ajouté au panier");
+    } else {
       panier[product.id] = product;
       produitdanspanier.textContent = "Le produit a été ajouté au panier !";
     }
