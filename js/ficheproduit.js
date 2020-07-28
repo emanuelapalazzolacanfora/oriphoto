@@ -58,9 +58,6 @@ get (apiUrl+idProduit).then((response)=>{
   });
 // // Ajoute le produit au panier
   const btn = document.getElementById("ajoutduproduitaupanier");
-  const produitdanspanier = document.createElement("div");
-  let ficheduproduit = document.getElementById("ficheduproduit")
-  ficheduproduit.appendChild(produitdanspanier)
 
   // Assigne valeur à envoyer à localStorage
   const product = {
@@ -85,7 +82,7 @@ get (apiUrl+idProduit).then((response)=>{
       alert("Un produit supplémentaire a été ajouté au panier");
     } else {
       panier[product.id] = product;
-      produitdanspanier.textContent = "Le produit a été ajouté au panier !";
+      alert("Le produit a été ajouté au panier !");
     }
     // update panier localstorage
     localStorage.setItem("panier", JSON.stringify(panier));
