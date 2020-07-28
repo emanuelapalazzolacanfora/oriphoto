@@ -88,7 +88,7 @@ get (apiUrl+idProduit).then((response)=>{
     // update panier localstorage
     localStorage.setItem("panier", JSON.stringify(panier));
     produitdanspanier.textContent = "Le produit a été ajouté au panier !";
-    produitdanspanier.setAttribute("class", "form-group.erreur__formulaire label");
+    produitdanspanier.style.color="#CDCD37";
 });
 	});
 	
