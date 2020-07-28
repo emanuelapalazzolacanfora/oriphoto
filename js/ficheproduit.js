@@ -90,8 +90,7 @@ get (apiUrl+idProduit).then((response)=>{
     }
     // update panier localstorage
     localStorage.setItem("panier", JSON.stringify(panier));
-    produitdanspanier.textContent = "Le produit a été ajouté au panier !";
-    produitdanspanier.style.color="#CDCD37";
+    window.open("./index.html");
 });
 	});
 	
