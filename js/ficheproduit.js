@@ -58,7 +58,9 @@ get (apiUrl+idProduit).then((response)=>{
   });
 // // Ajoute le produit au panier
   const btn = document.getElementById("ajoutduproduitaupanier");
-  const produitdanspanier = document.getElementById("produitdanspanier");
+  const produitdanspanier = document.createElement("div");
+  let ficheduproduit = document.getElementById("ficheduproduit")
+  ficheduproduit.appendChild(produitdanspanier)
 
   // Assigne valeur à envoyer à localStorage
   const product = {
@@ -85,10 +87,12 @@ get (apiUrl+idProduit).then((response)=>{
     }
     // update panier localstorage
     localStorage.setItem("panier", JSON.stringify(panier));
-    produitdanspanier.setAttribute ("display", "block");
-    produitdanspanier.setAttribute ("display", "none");
-
+    produitdanspanier.textContent = "Le produit a été ajouté au panier !";
+    produitdanspanier.setAttribute("class", "form-group.erreur__formulaire label");
 });
 	});
+	
+
+
 	
 
