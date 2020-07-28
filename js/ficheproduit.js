@@ -84,13 +84,13 @@ get (apiUrl+idProduit).then((response)=>{
       panier[product.id].quantity += 1;
       produitdanspanier.textContent = "Le produit a été ajouté au panier !";
       produitdanspanier.style.color="#CDCD37";
+      window.open("./index.html");
     } else {
       panier[product.id] = product;
       produitdanspanier.textContent = "Le produit a été ajouté au panier !";
     }
     // update panier localstorage
     localStorage.setItem("panier", JSON.stringify(panier));
-    window.open("./index.html");
 });
 	});
 	
