@@ -139,12 +139,12 @@ form.addEventListener('submit', (e) => {
         products
     }
     post("https://oc-p5-api.herokuapp.com/api/cameras/order", data).then((response) => {
-        let products = []
         let totalPrice = 0;
-        for (let product of Object.values(products)) {
+        const panier = JSON.parse(localStorage.getItem('panier'))
+        for (let product of Object.values(panier)) {
             totalPrice += product.price * product.quantity
         }
-        window.location = `./confirmation-de-commande.html?id=${response.orderId}&user=${response.contact.firstName}&price=${totalPrice}`; // Redirige vers la page de confirmation de commande
+        window.location = `./confirmation-de-commande.html?id=${response.orderId}&user=${response.contact.firstName}&price=${response.totalPrice}`; // Redirige vers la page de confirmation de commande
         localStorage.clear();
     })
 });
