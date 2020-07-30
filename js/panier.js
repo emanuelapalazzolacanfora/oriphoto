@@ -136,20 +136,15 @@ form.addEventListener('submit', (e) => {
             address: e.target.adresseclient.value,
             city: e.target.villeclient.value
         },
-        products,
-        let totalPrice = 0;
-
-        const updateTotalPrice = () => {
-            const panier = JSON.parse(localStorage.getItem('panier'))
-            let totalPrice = 0;
-            for (let product of Object.values(panier)) {
-                 totalPrice += product.price * product.quantity
-            }
-    
-        }
+        products
     }
     post("https://oc-p5-api.herokuapp.com/api/cameras/order", data).then((response) => {
-        window.location = ./confirmation-de-commande.html?id=${response.orderId}&user=${response.contact.firstName}&price=${response.panier.totalPrice}; // Redirige vers la page de confirmation de commande
+        let products = []
+        let totalPrice = 0;
+        for (let product of Object.values(products)) {
+            totalPrice += product.price * product.quantity
+        }
+        window.location = `./confirmation-de-commande.html?id=${response.orderId}&user=${response.contact.firstName}&price=${response.totalPrice}`; // Redirige vers la page de confirmation de commande
         localStorage.clear();
     })
 });
