@@ -144,7 +144,7 @@ form.addEventListener('submit', (e) => {
         for (let product of Object.values(panier)) {
             totalPrice += product.price * product.quantity
         }
-        window.location = `./confirmation-de-commande.html?id=${response.orderId}&user=${response.contact.firstName}&price=${totalPrice}`; // Redirige vers la page de confirmation de commande
+        window.location = `./confirmation-de-commande.html?id=${response.orderId}&user=${response.contact.firstName}&price=${totalPrice / 100}`; // Redirige vers la page de confirmation de commande
         localStorage.clear();
     })
 });
