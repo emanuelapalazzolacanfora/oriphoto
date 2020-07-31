@@ -51,7 +51,7 @@ p{
 	font-weight:bold;
 }
 
-.panier-total__prix, .fa-minus-circle, .fa-plus-circle, .user, .order-id{
+.panier-total__prix, .fa-minus-circle, .fa-plus-circle, .user, .price, .order-id{
 	color: #CDCD37;
 	text-transform: capitalize;
 	font-weight:bold;
